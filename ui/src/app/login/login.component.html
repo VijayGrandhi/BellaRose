@@ -1,1 +1,21 @@
-<p>login works!</p>
+<div class="login">
+    <h3>LOGIN</h3>
+    <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+        <div class="inputfield">
+    <label for="username">
+      Username
+    </label>
+    <input id="username" type="text" formControlName="username">
+  </div>
+
+  <div class="inputfield">
+    <label for="password">
+      Password
+    </label>
+    <input id="password" type="password" formControlName="password">
+  </div>
+
+  <button class="button" type="submit">Login</button>
+
+    </form>
+</div>
